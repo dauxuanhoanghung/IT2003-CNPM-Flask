@@ -1,0 +1,56 @@
+[
+ {
+  "id": 1,
+  "name": "iPhone 14 Plus",
+  "description": "Apple, 256GB, RAM: 6GB, iOS16",
+  "price": 28990000,
+  "image":
+ "https://m.media-amazon.com/images/I/61YSNhAb00L._SL1500_.jpg",
+  "category_id": 1
+ },
+ {
+  "id": 2,
+  "name": "iPad Pro 2020",
+  "description": "Apple, 128GB, RAM: 6GB",
+  "price": 37000000,
+  "image":
+ "https://cdn.tgdd.vn/Products/Images/522/238645/ipad-pro-m1-129-inch-wifi-sliver-600x600.jpg",
+  "category_id": 2
+ },
+ {
+  "id": 3,
+  "name": "Galaxy S22 Ultra 5G",
+ "description": "Samsung, 128GB, RAM: 8GB",
+  "price": 25990000,
+  "image":
+ "https://cdn.tgdd.vn/Products/Images/42/271697/Galaxy-S22-Ultra-Green-600x600.jpg",
+  "category_id": 1
+ },
+ {
+  "id": 4,
+  "name": "iPhone 14 Plus",
+  "description": "Apple, 256GB, RAM: 6GB, iOS16",
+  "price": 28990000,
+  "image":
+ "https://m.media-amazon.com/images/I/61YSNhAb00L._SL1500_.jpg",
+  "category_id": 1
+ },
+ {
+  "id": 5,
+  "name": "iPad Pro 2020",
+  "description": "Apple, 128GB, RAM: 6GB",
+  "price": 37000000,
+  "image":
+ "https://cdn.tgdd.vn/Products/Images/522/238645/ipad-pro-m1-129-inch-wifi-sliver-600x600.jpg",
+  "category_id": 2
+ },
+ {
+  "id": 6,
+  "name": "Galaxy S22 Ultra 5G",
+ "description": "Samsung, 128GB, RAM: 8GB",
+  "price": 25990000,
+  "image":
+ "https://cdn.tgdd.vn/Products/Images/42/271697/Galaxy-S22-Ultra-Green-600x600.jpg",
+  "category_id": 1
+ }
+]
