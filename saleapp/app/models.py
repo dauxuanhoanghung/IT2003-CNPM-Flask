@@ -42,47 +42,47 @@ if __name__ == "__main__":
         # db.session.add(c3)
         # 
         # db.session.commit()
-        p1 = Product(name="iPhone 14 Plus",
-                     description="Apple, 256GB, RAM: 6GB, iOS16",
-                     price=28990000,
-                     image="https://m.media-amazon.com/images/I/61YSNhAb00L._SL1500_.jpg",
+        p1 = Product(name="Xiaomi 12T",
+                     description="Xiaomi, 256GB, RAM: 8GB, Android 12",
+                     price=12990000,
+                     image="https://cdn.tgdd.vn/Products/Images/42/291623/xiaomi-12t-thumb-600x600.jpg",
                      category_id=1)
-        p2 = Product(name="iPad Pro 2020",
-                     description="Apple, 128GB, RAM: 6GB",
-                     price=37000000,
-                     image=
-                     "https://cdn.tgdd.vn/Products/Images/522/238645/ipad-pro-m1-129-inch-wifi-sliver-600x600.jpg",
-                     category_id=2)
-        p3 = Product(name="Galaxy S22 Ultra 5G",
-                     description="Samsung, 128GB, RAM: 8GB",
-                     price=25990000,
-                     image=
-                     "https://cdn.tgdd.vn/Products/Images/42/271697/Galaxy-S22-Ultra-Green-600x600.jpg",
-                     category_id=1)
-        p4 = Product(name="iPhone 14 Plus",
-                     description="Apple, 256GB, RAM: 6GB, iOS16",
-                     price=28990000,
-                     image=
-                     "https://m.media-amazon.com/images/I/61YSNhAb00L._SL1500_.jpg",
-                     category_id=1)
-        p5 = Product(name="iPad Pro 2020",
-                     description="Apple, 128GB, RAM: 6GB",
-                     price=37000000,
-                     image=
-                     "https://cdn.tgdd.vn/Products/Images/522/238645/ipad-pro-m1-129-inch-wifi-sliver-600x600.jpg",
-                     category_id=2)
-        p6 = Product(name="Galaxy S22 Ultra 5G",
-                     description="Samsung, 128GB, RAM: 8GB",
-                     price=25990000,
-                     image=
-                     "https://cdn.tgdd.vn/Products/Images/42/271697/Galaxy-S22-Ultra-Green-600x600.jpg",
-                     category_id=1)
+        # p2 = Product(name="iPad Pro 2020",
+        #              description="Apple, 128GB, RAM: 6GB",
+        #              price=37000000,
+        #              image=
+        #              "https://cdn.tgdd.vn/Products/Images/522/238645/ipad-pro-m1-129-inch-wifi-sliver-600x600.jpg",
+        #              category_id=2)
+        # p3 = Product(name="Galaxy S22 Ultra 5G",
+        #              description="Samsung, 128GB, RAM: 8GB",
+        #              price=25990000,
+        #              image=
+        #              "https://cdn.tgdd.vn/Products/Images/42/271697/Galaxy-S22-Ultra-Green-600x600.jpg",
+        #              category_id=1)
+        # p4 = Product(name="iPhone 14 Plus",
+        #              description="Apple, 256GB, RAM: 6GB, iOS16",
+        #              price=28990000,
+        #              image=
+        #              "https://m.media-amazon.com/images/I/61YSNhAb00L._SL1500_.jpg",
+        #              category_id=1)
+        # p5 = Product(name="iPad Pro 2020",
+        #              description="Apple, 128GB, RAM: 6GB",
+        #              price=37000000,
+        #              image=
+        #              "https://cdn.tgdd.vn/Products/Images/522/238645/ipad-pro-m1-129-inch-wifi-sliver-600x600.jpg",
+        #              category_id=2)
+        # p6 = Product(name="Galaxy S22 Ultra 5G",
+        #              description="Samsung, 128GB, RAM: 8GB",
+        #              price=25990000,
+        #              image=
+        #              "https://cdn.tgdd.vn/Products/Images/42/271697/Galaxy-S22-Ultra-Green-600x600.jpg",
+        #              category_id=1)
 
         db.session.add(p1)
-        db.session.add(p2)
-        db.session.add(p3)
-        db.session.add(p4)
-        db.session.add(p5)
-        db.session.add(p6)
+        # db.session.add(p2)
+        # db.session.add(p3)
+        # db.session.add(p4)
+        # db.session.add(p5)
+        # db.session.add(p6)
 
         db.session.commit()

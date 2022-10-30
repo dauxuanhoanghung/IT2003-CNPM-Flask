@@ -5,11 +5,11 @@
     {% for pd in products: %}
     <div class="col-md-3 col-sm-12" style="padding: 1rem">
         <div class="card">
-            <img class="card-img-top" src={{pd.image}} alt="Card image">
+            <img class="card-img-top well-lg" src={{pd.image}} alt="Card image">
             <div class="card-body">
                 <h4 class="card-title">{{ pd.name }}</h4>
                 <p class="card-text">{{ "{:,}".format(pd.price) }} VNĐ</p>
-                <a href="#" class="btn btn-primary">Xem chi tiết</a>
+                <a href="/products/{{pd.id}}" class="btn btn-primary">Xem chi tiết</a>
             </div>
         </div>
     </div>

@@ -2,6 +2,7 @@ import json
 from app import app
 from app.models import Category, Product
 
+
 def load_categories():
     return Category.query.all()
     # with open('%s/data/categories.json' % app.root_path, encoding='utf-8') as f:
@@ -26,3 +27,7 @@ def load_products(category_id=None, kw=None, from_price=None, to_price=None):
         query = query.filter(Product.price <= float(to_price))
 
     return query.all()
+
+
+def get_product_by_id(product_id: int):
+    return Product.query.get(product_id)
