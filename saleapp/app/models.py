@@ -1,6 +1,13 @@
-from sqlalchemy import Column, Integer, Float, Boolean, String, Text, ForeignKey
+from sqlalchemy import Column, Integer, Float, Boolean, String, Text, ForeignKey, Enum
 from sqlalchemy.orm import relationship
 from app import db, app
+from enum import Enum as UserEnum
+from flask_login import UserMixin
+
+
+class UserRoleEnum(UserEnum):
+    USER = 1
+    ADMIN = 2
 
 
 class BaseModel(db.Model):
@@ -30,9 +37,22 @@ class Product(BaseModel):
         return self.name
 
 
+class User(BaseModel, UserMixin):
+    name = Column(String(50), nullable=False)
+    email = Column(String(50))
+    username = Column(String(50), nullable=False)
+    password = Column(String(50), nullable=False)
+    avatar = Column(String(100))
+    user_role = Column(Enum(UserRoleEnum), default=UserRoleEnum.USER)
+    active = Column(Boolean, default=True)
+
+    def __str__(self):
+        return self.name
+
+
 if __name__ == "__main__":
     with app.app_context():
-        # db.create_all()
+        db.create_all()
         # c1 = Category(name='Điện thoại')
         # c2 = Category(name='Máy tính bảng')
         # c3 = Category(name='Phụ kiện')
@@ -42,11 +62,11 @@ if __name__ == "__main__":
         # db.session.add(c3)
         # 
         # db.session.commit()
-        p1 = Product(name="Xiaomi 12T",
-                     description="Xiaomi, 256GB, RAM: 8GB, Android 12",
-                     price=12990000,
-                     image="https://cdn.tgdd.vn/Products/Images/42/291623/xiaomi-12t-thumb-600x600.jpg",
-                     category_id=1)
+        # p1 = Product(name="Xiaomi 12T",
+        #              description="Xiaomi, 256GB, RAM: 8GB, Android 12",
+        #              price=12990000,
+        #              image="https://cdn.tgdd.vn/Products/Images/42/291623/xiaomi-12t-thumb-600x600.jpg",
+        #              category_id=1)
         # p2 = Product(name="iPad Pro 2020",
         #              description="Apple, 128GB, RAM: 6GB",
         #              price=37000000,
@@ -78,11 +98,11 @@ if __name__ == "__main__":
         #              "https://cdn.tgdd.vn/Products/Images/42/271697/Galaxy-S22-Ultra-Green-600x600.jpg",
         #              category_id=1)
 
-        db.session.add(p1)
+        # db.session.add(p1)
         # db.session.add(p2)
         # db.session.add(p3)
         # db.session.add(p4)
         # db.session.add(p5)
         # db.session.add(p6)
 
-        db.session.commit()
+        # db.session.commit()
